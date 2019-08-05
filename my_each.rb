@@ -5,7 +5,7 @@ def my_each(argument) # put argument(s) here
   if block_given?
     counter = 0
 
-    while counter < argument.length do
+    while counter < argument.length do |argument|
       yield (argument(counter))
       counter += 1
     end
