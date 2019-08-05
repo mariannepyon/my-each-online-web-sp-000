@@ -3,15 +3,13 @@ argument = []
 def my_each(argument) # put argument(s) here
   # code here
   if block_given?
-    i = 0
+    counter = 0
 
-    while i < argument.length
-      my_each(argument) do |i|
-      i = i + 1
-  end
+    while counter < argument.length
+      yield (argument(counter))
+      counter += 1
+    end
   
     argument
-  else
-      puts "Hey! No block was given"
     end
   end
