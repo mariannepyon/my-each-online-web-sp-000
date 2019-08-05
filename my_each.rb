@@ -1,10 +1,13 @@
+argument = []
+
 def my_each(argument) # put argument(s) here
   # code here
   if block_given?
     i = 0
 
-    while my_each(argument) do |i|
-      puts i
+    while i < argument.length
+      my_each(argument) do |i|
+      i = i + 1
   end
 
   else
