@@ -1,6 +1,8 @@
 def my_each(argument) # put argument(s) here
   # code here
   if block_given?
+    i = 0
+    
     while my_each(argument) do |i|
       yield (argument[i])
       i = i + 1
@@ -8,6 +10,6 @@ def my_each(argument) # put argument(s) here
 
     argument
   else
-      puts "the end"
+      puts "Hey! No block was given"
     end
 end
