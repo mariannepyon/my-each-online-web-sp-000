@@ -3,7 +3,7 @@ def my_each(argument) # put argument(s) here
   if block_given?
     i = 0
 
-    while my_each(argument) do |i|
+    while argument.each do |i|
       yield (argument[i])
       i = i + 1
   end
