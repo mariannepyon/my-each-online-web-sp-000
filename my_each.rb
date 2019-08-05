@@ -9,7 +9,7 @@ def my_each(argument) # put argument(s) here
       yield (argument(counter))
       counter += 1
     end
-  
+
     argument
     end
   end
