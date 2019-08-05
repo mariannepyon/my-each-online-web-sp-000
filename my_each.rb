@@ -14,4 +14,3 @@ def my_each(argument) # put argument(s) here
       puts "Hey! No block was given"
     end
   end
-
