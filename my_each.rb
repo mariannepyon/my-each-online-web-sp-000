@@ -7,7 +7,5 @@ def my_each(argument) # put argument(s) here
   end
 
     argument
-  else
-      puts "the end"
-    end
+
 end
