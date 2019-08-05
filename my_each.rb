@@ -8,7 +8,7 @@ def my_each(argument) # put argument(s) here
     while i < argument.length
       my_each(argument) do |i|
       i = i + 1
-  
+  end
 
   else
       puts "Hey! No block was given"
